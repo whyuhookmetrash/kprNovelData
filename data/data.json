@@ -2,12 +2,12 @@
     "scenes": [
       {
         "image": "scene0",
-        "text": "Вы просыпаетесь в странной комнате. Что вы будете делать?",
+        "text": "Вы просыпаетесь в странной комнате. Что вы будет?",
         "options": [
-          { "text": "1", "nextIndex": 1, "consequence": 0, "branching": 0,
+          { "text": "text1", "nextIndex": 1, "consequence": 0, "branching": 0,
 			"branches": [ { "condition": 0, "nextIndex": 0, "consequence": 999 },
 			{ "condition": 0, "nextIndex": 0, "consequence": 999} ]},
-          { "text": "2", "nextIndex": 1, "consequence": 999, "branching": 0,
+          { "text": "text2", "nextIndex": 1, "consequence": 999, "branching": 0,
 			"branches": [ { "condition": 0, "nextIndex": 0, "consequence": 999 },
 			{ "condition": 0, "nextIndex": 0, "consequence": 999} ]},
         ]
@@ -17,10 +17,10 @@
         "image": "scene1",
         "text": "Вы просыпаетесь в странной комнате. Что вы будете делать?",
         "options": [
-          { "text": "1", "nextIndex": 2, "consequence": 999, "branching": 1,
+          { "text": "text1", "nextIndex": 2, "consequence": 999, "branching": 1,
 			"branches": [ { "condition": 0, "nextIndex": 0, "consequence": 999 },
 			{ "condition": 0, "nextIndex": 0, "consequence": 999} ]},
-          { "text": "2", "nextIndex": 2, "consequence": 999, "branching": 0,
+          { "text": "text2", "nextIndex": 2, "consequence": 999, "branching": 0,
 			"branches": [ { "condition": 0, "nextIndex": 0, "consequence": 999 },
 			{ "condition": 0, "nextIndex": 0, "consequence": 999} ]},
         ]
