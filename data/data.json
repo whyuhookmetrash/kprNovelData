@@ -2,53 +2,308 @@
     "scenes": [
       {
         "image": "scene0",
-        "text": "Вы просыпаетесь в странной комнате. Что вы будет?",
+        "text": "Вы пришли в качалку.",
         "options": [
-          { "text": "text1", "nextIndex": 1, "consequence": 0, "branching": 0,
-			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 } 
-      ]},
-          { "text": "text2", "nextIndex": 1, "consequence": 999, "branching": 0,
-			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 } 
-        ]}
+          { "text": "Зайти в спортзал", "nextIndex": 2, "consequence": 999, "branching": 0,
+			"branches": []},
+          { "text": "Зайти в буфет", "nextIndex": 1, "consequence": 999, "branching": 0,
+			"branches": []}
         ]
       },
 	  
 	  {
         "image": "scene1",
-        "text": "Вы просыпаетесь в странной комнате. Что вы будете делать?",
+        "text": "Вы видите на витрине различную еду.",
         "options": [
-          { "text": "text1", "nextIndex": 2, "consequence": 999, "branching": 1,
-			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 }
-        ]},
-          { "text": "text2", "nextIndex": 2, "consequence": 999, "branching": 0,
-			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 } 
-        ]}
+          { "text": "Купить протеин", "nextIndex": 3, "consequence": 1, "branching": 0,
+			"branches": []},
+          { "text": "Купить плотный обед", "nextIndex": 3, "consequence": 2, "branching": 0,
+			"branches": []}
         ]
       },
 	  
 	  {
         "image": "scene2",
-        "text": "Вы просыпаетесь в странной комнате. Что вы будете делать?",
+        "text": "Перед вами споткнулся и упал немытый человек похожий на бомжа",
         "options": [
-          { "text": "Осмотреться.", "nextIndex": 0, "consequence": 999, "branching": 0,
+          { "text": "Подойти, прихватить за спину и помочь встать", "nextIndex": 3, "consequence": 0, "branching": 0,
+			"branches": []},
+          { "text": "Пройти мимо", "nextIndex": 3, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene3",
+        "text": "Вы зашли в раздевалку. Перед вами только 2 свободных шкафчика, один из них сломанный.",
+        "options": [
+          { "text": "Положить вещи в сломанный шкафчик", "nextIndex": 4, "consequence": 3, "branching": 0,
+			"branches": []},
+          { "text": "Положить вещи в другой шкафчик", "nextIndex": 4, "consequence": 4, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene4",
+        "text": "Куда пойдете?",
+        "options": [
+          { "text": "Беговая дорожка", "nextIndex": 5, "consequence": 999, "branching": 0,
+			"branches": []},
+          { "text": "Жим лежа", "nextIndex": 6, "consequence": 5, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene5",
+        "text": "Вы хорошо размялись, теперь можно приступить к жиму лежа.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 6, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene6",
+        "text": "Вы хотите приступить к упражнению, но вас окликивает какой-то Бугай и говорит что это его штанга, и он не пустит на нее такого слабака как ты.",
+        "options": [
+          { "text": "Поспорить с ним на 20кY что ты выжмешь штангу 10 раз.", "nextIndex": 8, "consequence": 999, "branching": 1,
 			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 } 
+        { "condition": 5, "nextIndex": 7, "consequence": 6 }
         ]},
-          { "text": "Осмотреться.", "nextIndex": 0, "consequence": 999, "branching": 0,
+          { "text": "Уйти.", "nextIndex": 15, "consequence": 8, "branching": 1,
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene7",
+        "text": "Ты еле выжимаешь штангу 9 раз и чувствуешь сильную боль в запястье. Из-за отсутствия разминки ты повредил кисть руки.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 15, "consequence": 9, "branching": 1,
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene8",
+        "text": "Ты еле выжимаешь штангу 9 раз, остался 1, ты чувствуешь что есть еще немного сил попробовать выжать последний 10 раз.",
+        "options": [
+          { "text": "Попробовать.", "nextIndex": 9, "consequence": 999, "branching": 1,
 			"branches": [
-        { "condition": 0, "nextIndex": 0, "consequence": 999 },
-			  { "condition": 0, "nextIndex": 0, "consequence": 999 }
-        ]}
+        { "condition": 0, "nextIndex": 10, "consequence": 999 },
+		{ "condition": 1, "nextIndex": 14, "consequence": 7 },
+		{ "condition": 2, "nextIndex": 11, "consequence": 999 }
+        ]},
+          { "text": "Сдаться и уйти с позором", "nextIndex": 15, "consequence": 6, "branching": 1,
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene9",
+        "text": "Ты не справляешься и чувствуешь что штанга начинает давить тебе на шею. Бугай стоит и насмехается над тобой.",
+        "options": [
+          { "text": "Вы умерли", "nextIndex": 9, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene10",
+        "text": "Ты не справляешься и чувствуешь что штанга начинает давить тебе на шею, но внезапно к тебе подбегает бомж, который помогает снять тебе штангу. Ты был близок к травме и заработал уважение окружающих",
+        "options": [
+          { "text": "Поблагодарить", "nextIndex": 15, "consequence": 10, "branching": 1,
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene11",
+        "text": "Ты еле выжимаешь 10 раз, но чувствуешь что плотный обед сыграл с тобой плохую шутку. Он начинает лезть наружу.",
+        "options": [
+          { "text": "Сдержать его во рту", "nextIndex": 12, "consequence": 999, "branching": 0,
+			"branches": []},
+		  { "text": "Поддаться и выплеснуть его наружу", "nextIndex": 13, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene12",
+        "text": "Вы подавились рвотой и умерли",
+        "options": [
+          { "text": "Конец", "nextIndex": 12, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene13",
+        "text": "Вы выплеснули все наружу. Вам стало плохо и вас увезли на скорой.",
+        "options": [
+          { "text": "Конец", "nextIndex": 13, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene14",
+        "text": "Ты чувствуешь прилив сил благодаря протеину и выжимаешь 10 раз. Теперь все в зале признают тебя.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 15, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene15",
+        "text": "Ты вернулся в раздевалку и видишь как рядом с твоим шкафчиком стоит голый, только вышедший после душа мужик, разложивший одежду по всей скамейке, неспеша одеваясь. Но тут тебе позвонила мама и сказала что по какой-то причине ты должен поспешить домой.",
+        "options": [
+          { "text": "Подойти к мужику и попросить подвинуться", "nextIndex": 17, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 7, "nextIndex": 17, "consequence": 999 },
+			{ "condition": 8, "nextIndex": 19, "consequence": 999 },
+			{ "condition": 6, "nextIndex": 19, "consequence": 999 }]},
+		  { "text": "Присесть рядом и подождать пока он оденется и уйдет", "nextIndex": 25, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 7, "nextIndex": 28, "consequence": 999 }]}
+        ]
+      },
+	  
+	  {
+        "image": "scene16",
+        "text": "Ты вернулся в раздевалку и видишь как твой сломанный шкафчик открыт и в твоих вещах копошится вор.",
+        "options": [
+          { "text": "Игнорировать", "nextIndex": 25, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 7, "nextIndex": 27, "consequence": 999 }]},
+		  { "text": "Подойти к нему", "nextIndex": 18, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 7, "nextIndex": 18, "consequence": 999 },
+			{ "condition": 8, "nextIndex": 20, "consequence": 999 },
+			{ "condition": 6, "nextIndex": 20, "consequence": 999 }
+			]}
+        ]
+      },
+	  
+	  {
+        "image": "scene17",
+        "text": "Мужик, полный уважения к тебе, двигается и дает тебе пробраться к шкафчику",
+        "options": [
+          { "text": "Дальше", "nextIndex": 29, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene18",
+        "text": "Вор, полный уважения к тебе, извинившись уходит.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 29, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene19",
+        "text": "С виду, мужик явно не собирается двигаться и ведет себя вызывающе.",
+        "options": [
+          { "text": "Ударить", "nextIndex": 21, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 9, "nextIndex": 23, "consequence": 999 }]},
+		  { "text": "Уйти", "nextIndex": 25, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene20",
+        "text": "Похоже, что вор не собирается отдавать тебе украденное и смотрит на тебя агрессивным взглядом.",
+        "options": [
+          { "text": "Ударить", "nextIndex": 22, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 9, "nextIndex": 24, "consequence": 999 }]},
+		  { "text": "Уйти", "nextIndex": 25, "consequence": 999, "branching": 0,
+			"branches": []}
+        ]
+      },
+	  
+	  {
+        "image": "scene21",
+        "text": "Ты смог дать мужику отпор, он подвинулся",
+        "options": [
+          { "text": "Дальше", "nextIndex": 27, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]},
+        ]
+      },
+	  
+	  {
+        "image": "scene22",
+        "text": "Ты смог дать вору отпор, он отдал награбленное и ушел",
+        "options": [
+          { "text": "Дальше", "nextIndex": 27, "consequence": 999, "branching": 1,
+			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]},
+        ]
+      },
+	  
+	  {
+        "image": "scene23",
+        "text": "Из-за своей поврежденной кисти ты не смог дать отпор и проиграл бой.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 25, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene24",
+        "text": "Из-за своей поврежденной кисти ты не смог дать отпор и проиграл бой.",
+        "options": [
+          { "text": "Дальше", "nextIndex": 25, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene25",
+        "text": "Ты ничтожество",
+        "options": [
+          { "text": "Конец", "nextIndex": 25, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene26",
+        "text": "Непонятно зачем приходил в зал",
+        "options": [
+          { "text": "Конец", "nextIndex": 26, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene27",
+        "text": "Ты был унижен и остался без денег",
+        "options": [
+          { "text": "Конец", "nextIndex": 27, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene28",
+        "text": "Ты опоздал на важную встречу",
+        "options": [
+          { "text": "Конец", "nextIndex": 28, "consequence": 999, "branching": 0,
+			"branches": []},
+        ]
+      },
+	  
+	  {
+        "image": "scene29",
+        "text": "Победа!",
+        "options": [
+          { "text": "Конец", "nextIndex": 29, "consequence": 999, "branching": 0,
+			"branches": []},
         ]
       }
+	  
     ]
   }
