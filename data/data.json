@@ -229,7 +229,7 @@
         "text": "Ты смог дать мужику отпор, он подвинулся",
         "options": [
           { "text": "Дальше", "nextIndex": 27, "consequence": 999, "branching": 1,
-			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]},
+			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]}
         ]
       },
 	  
@@ -238,7 +238,7 @@
         "text": "Ты смог дать вору отпор, он отдал награбленное и ушел",
         "options": [
           { "text": "Дальше", "nextIndex": 27, "consequence": 999, "branching": 1,
-			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]},
+			"branches": [{ "condition": 8, "nextIndex": 26, "consequence": 999 }]}
         ]
       },
 	  
@@ -247,7 +247,7 @@
         "text": "Из-за своей поврежденной кисти ты не смог дать отпор и проиграл бой.",
         "options": [
           { "text": "Дальше", "nextIndex": 25, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -256,7 +256,7 @@
         "text": "Из-за своей поврежденной кисти ты не смог дать отпор и проиграл бой.",
         "options": [
           { "text": "Дальше", "nextIndex": 25, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -265,7 +265,7 @@
         "text": "Ты ничтожество",
         "options": [
           { "text": "Конец", "nextIndex": 25, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -274,7 +274,7 @@
         "text": "Непонятно зачем приходил в зал",
         "options": [
           { "text": "Конец", "nextIndex": 26, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -283,7 +283,7 @@
         "text": "Ты был унижен и остался без денег",
         "options": [
           { "text": "Конец", "nextIndex": 27, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -292,7 +292,7 @@
         "text": "Ты опоздал на важную встречу",
         "options": [
           { "text": "Конец", "nextIndex": 28, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       },
 	  
@@ -301,7 +301,7 @@
         "text": "Победа!",
         "options": [
           { "text": "Конец", "nextIndex": 29, "consequence": 999, "branching": 0,
-			"branches": []},
+			"branches": []}
         ]
       }
 	  
