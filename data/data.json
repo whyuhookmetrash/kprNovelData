@@ -73,7 +73,7 @@
         { "condition": 5, "nextIndex": 7, "consequence": 6 }
         ]},
           { "text": "Уйти.", "nextIndex": 15, "consequence": 8, "branching": 1,
-			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 8 }]}
         ]
       },
 	  
@@ -82,7 +82,7 @@
         "text": "Ты еле выжимаешь штангу 9 раз и чувствуешь сильную боль в запястье. Из-за отсутствия разминки ты повредил кисть руки.",
         "options": [
           { "text": "Дальше", "nextIndex": 15, "consequence": 9, "branching": 1,
-			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 9 }]}
         ]
       },
 	  
@@ -97,7 +97,7 @@
 		{ "condition": 2, "nextIndex": 11, "consequence": 999 }
         ]},
           { "text": "Сдаться и уйти с позором", "nextIndex": 15, "consequence": 6, "branching": 1,
-			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 6 }]}
         ]
       },
 	  
@@ -115,7 +115,7 @@
         "text": "Ты не справляешься и чувствуешь что штанга начинает давить тебе на шею, но внезапно к тебе подбегает бомж, который помогает снять тебе штангу. Ты был близок к травме и заработал уважение окружающих",
         "options": [
           { "text": "Поблагодарить", "nextIndex": 15, "consequence": 10, "branching": 1,
-			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 999 }]}
+			"branches": [{ "condition": 3, "nextIndex": 16, "consequence": 10 }]}
         ]
       },
 	  
